@@ -1,0 +1,262 @@
+/*reset connection*/
+
+@import url('./reset.css');
+
+/* connecting the font*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@400;500;600;700&display=swap');
+/* common styles*/
+
+html {
+	scroll-behavior: smooth;/* smooth scrolling */
+}
+
+body{
+	font-family: 'Cormorant Infant', serif;
+	color: #000;
+	font-size: 16px;
+	line-height: 1.2;
+}
+
+p {
+	font-size: 20px;
+	line-height: 2;
+	text-indent: 10px;
+}
+
+.container{
+	max-width: 1470px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+.title{
+	text-align: center;
+	max-width: 100%;
+	position: relative;
+    font-weight: 700;
+    font-size: 40px;
+}
+.title:after{
+    content: '';
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border: 2px solid #000;
+}
+
+/* Header */
+
+.header{
+	background: conic-gradient(from 180deg at right top, #CBCACA 55deg,#D0D8D7  55deg, #D3D3D3 70deg, #DDE2E2 70deg);
+	padding-top: 20px;
+	/*height: 100vh;*/
+	margin-bottom: 100px;
+}
+
+.header-nav{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 100px;
+}
+
+/* Nav */
+
+.nav-list{
+	display: flex;
+	gap: 50px;
+	font-weight: 600;
+	font-size: 20px;
+}
+
+.nav-button{
+	display: none;
+}
+
+.nav-link{
+	color: #866969;
+}
+.nav-link.active{
+	color: #000;
+}
+
+/* Header content*/
+
+.header-row{
+	display: flex;
+	column-gap: 50px;
+}
+
+.header-content{
+	max-width: 500px;
+	margin-top: 50px;
+}
+
+.header-heading{
+	margin-bottom: 20px;
+	font-weight: 700;
+	font-size: 50px;
+
+}
+
+.header-heading-text {
+	padding-bottom: 50px;
+}
+
+/* Portfolio */
+
+.portfolio{
+	margin-bottom: 100px;
+}
+
+.portfolio-title{
+	margin-bottom: 50px;
+}
+
+.cards-grid{
+
+	display: grid;
+	max-width: 1400px;
+  	margin: 0 auto;
+  	gap: 10px;
+  	justify-content: center;
+ 	grid: repeat(4, 300px) / repeat(13, 80px);
+ 	grid-template-areas: 
+ 	"g01 g01 g01 g01 g01 g02 g02 g02 g02 g05 g05 g05 g05"
+ 	"g01 g01 g01 g01 g01 g02 g02 g02 g02 g05 g05 g05 g05"
+ 	"g03 g03 g03 g03 g04 g04 g04 g04 g06 g06 g06 g06 g06"
+ 	"g03 g03 g03 g03 g04 g04 g04 g04 g06 g06 g06 g06 g06"
+ }
+ 
+.cards-grid div:nth-child(1) {
+	grid-area: g01;
+	background-image: url('../img/portfolio/portrait.jpg ');
+	
+}
+.cards-grid div:nth-child(2) {
+	grid-area: g02;
+	background-image: url('../img/portfolio/outdoor recreation.jpg ');
+	
+}
+.cards-grid div:nth-child(3) {
+	grid-area: g03;
+	background-image: url('../img/portfolio/hockey.jpg ');
+}
+.cards-grid div:nth-child(4) {
+	grid-area: g04;
+	background-image: url('../img/portfolio/temple.jpg ');
+
+}
+.cards-grid div:nth-child(5) {
+	grid-area: g05;
+	background-image: url('../img/portfolio/vase.jpg ');
+	
+}
+.cards-grid div:nth-child(6) {
+	grid-area: g06;
+	background-image: url('../img/portfolio/owl.jpg ');
+}
+
+.card-grid{
+ 	background-size: cover;
+ 	transition: transform 0.2s ease-in;
+}
+
+.card-grid:hover{
+	transform: translateY(-8px);
+}
+
+/* About me  */
+
+.about{
+	margin-bottom: 80px;
+}
+
+.about_me{
+	margin-bottom: 50px;
+}
+
+.about_me-content{
+	display: flex;
+	justify-content: space-between;
+	gap: 50px;
+}
+
+.about_me-text{
+	max-width: 500px;
+	margin-top: 25px;
+}
+
+.about_me-subtitle{
+
+	margin-bottom: 20px;
+	font-weight: 600;
+	font-size: 30px;
+}
+
+.about_me-img{
+	max-width: 500px;
+}
+
+/* Footer */
+
+.contacts{
+	background: conic-gradient(from 180deg at right top, #CBCACA 55deg,#D0D8D7  55deg, #D3D3D3 70deg, #DDE2E2 70deg);
+	padding: 90px 0;
+	text-align: center;
+
+}
+
+.contacts-title{
+	max-width: 100%;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.footer-title{
+	margin-bottom: 40px;
+}
+
+.contacts-content{
+	margin:  0 auto 40px;
+	max-width: 480px;
+	font-size: 24px;
+	font-weight: 600;
+}
+
+/*.contacts-content p + p{
+	margin-top: 1em;
+}*/
+
+.btn{
+	display: inline-block;
+	padding: 7px 22px;
+	background-color: #070707;
+	border-radius: 30px;
+	font-size: 24px;
+	color: #FFF;
+	transition: background-color 0.2s ease-in, top 0.2s ease-in;
+}
+
+
+.btn:hover, .btn:focus{
+	background-color: #323232;
+}
+
+.btn:active{
+	position: relative;
+	top: 1px;
+	background-color: #000;
+}
+
+.contacts-button{
+	margin-bottom: 30px;
+}
+
+.copyright{
+	color: #000;
+	font-size: 18px;
+	font-weight: 500;
+}
