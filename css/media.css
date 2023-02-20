@@ -188,7 +188,7 @@
 		position: fixed;
 		z-index: 9;
 		top: 50px;
-		right: 50px;
+		right: 90px;
 	}
 
 	.header-row{
@@ -275,6 +275,10 @@
 	.container{
 	padding: 0 10px;
 	margin: 0 auto;
+	}
+
+	.menu-icon{
+		right: 80px;
 	}
 
 	.header-heading{
@@ -382,7 +386,7 @@
 	}
 
 	.menu-icon{
-		right: 15px;
+		right: 50px;
 	}
 
 	.header-heading{
@@ -485,5 +489,6 @@
 	}
 	 
 }
+
 
 
