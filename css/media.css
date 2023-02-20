@@ -361,13 +361,13 @@
 	}
 
 	.title:after{
-    content: '';
-    width: 100%;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    border: 1px solid #000;
-}
+         	content: '';
+    		width: 100%;
+    		position: absolute;
+   		left: 0;
+    		bottom: 0;
+    		border: 1px solid #000;
+	}
 
 	p{
 		font-size: 14px;
@@ -385,9 +385,9 @@
 		max-width: 100px;
 	}
 
-	.menu-icon{
+	/*.menu-icon{
 		right: 50px;
-	}
+	}*/
 
 	.header-heading{
 		font-size: 25px;
@@ -416,8 +416,8 @@
 	}
 
 	.cards-grid div:nth-child(1) {
-	grid-area: g01;
-	background-image: url('../img/portfolio/portrait.jpg ');
+		grid-area: g01;
+		background-image: url('../img/portfolio/portrait.jpg ');
 	
 	}
 	.cards-grid div:nth-child(2) {
@@ -481,7 +481,7 @@
 	}
 
 	.contacts-content {
-    	margin-bottom: 10px;
+    		margin-bottom: 10px;
 	}
 
 	.btn{
